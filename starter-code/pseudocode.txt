@@ -96,5 +96,5 @@ func partition(var a as array, var low as int, var high as int){
 
     return (leftwall)
 
-Partition has one for loop and a big O(n). There are two recursive calls similar to the merge function which had a big O(logn). However, each recursion calls the for loop in partition function so total, the notation would be O(n*log(n)).
+Partition has one for loop and a big O(n). There are two recursive calls which splits the array as a pivot point, similar to the mergesort function which had a big O(logn). However, each recursion calls the for loop in the partition function so total, the notation would be O(n*log(n)).
 
