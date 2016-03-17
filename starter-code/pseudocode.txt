@@ -43,7 +43,7 @@ func merge( var a as array, var b as array )
      return c
 end func
 
-O(n). Merge sort has two consecutive recursive functions. The merge function has 3 while loops. The less complicated part would be recursion. Since it is dividing by half each time, the big O would be O(2log(n)). The while loops would be O(3n). Therefore, it would be O(n).
+O(nlog(n)). Merge sort has two consecutive recursive functions. The merge function has 3 while loops. The less complicated part would be recursion. Since it is dividing by half each time, the big O would be O(2log(n)). The while loops would be O(3n). Since each two recursions lead to a merge, the worst-case would be O(n*log(n)).
 
 Selection Sort:
 
